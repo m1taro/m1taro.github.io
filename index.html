@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0, minimum-scale=1.0">
+    <title>single page rayout</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/454c2e42a5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>    
+</head>
+<body>
+    <nav class="navi-bar">
+        <div id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="navi-bar-item">
+            <a class="navi-item" href="#about">about</a>
+            <a class="navi-item" href="#work">work</a>
+            <a class="navi-item" href="#contact">contact</a>
+        </div>
+    </nav>
+    <header class="header">
+        <p class="site-title-sub">Web designer's portfolio</p>
+        <h1 class="site-title">HI, MY NAME IS...</h1>
+        <p class="site-description">Check out some of my works.</p>
+        <div class="buttons">
+            <a class="button" href="#about">Leran More</a>
+            <a class="button button-showy" href="#contact">Send message</a>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <h2 class="heading">ABOUT ME</h2>
+        
+            <p class="about-text">
+                はじめまして。html&cssコーディングを始めました。<br>
+                北海道大学工学部に通っている学部4年です。<br>
+                今春に同大学工学院に進学します。
+            </p>
+            <p class="about-text">
+            </p>
+    </section>
+
+    <section class="works" id="work">
+        <h2 class="heading">WORKS</h2>
+        <p class="about-text">no work now...</p>
+    </section>
+
+    <section class="skills">
+        <h2 class="heading">MY SKILLS</h2>
+        <div class="skills-wrapper">
+            <div class="skill-box">
+                <i class="skill-icon fas fa-code"></i>
+                <div class="skill-title">CODING</div>
+                <p class="skill-text">
+                    HTML&CSSコーディングを行います。<br>
+                    jQueryでページに動きを出します。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">CONTACT</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="NAME">
+            <textarea name="message" placeholder="MESSAGE"></textarea>
+            <input type="submit" value="SEND">
+        </form>
+    </section>
+
+    <section class="footer">
+        (c) portfolio site
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
