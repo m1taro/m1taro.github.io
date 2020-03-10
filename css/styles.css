@@ -278,9 +278,6 @@ body {
     cursor: pointer;
 }
 
-.navi-bar-item {
-}
-
 .open {
     position: fixed;
     background: #151515;
@@ -294,6 +291,8 @@ body {
     list-style: none;
     margin-bottom: 20px;
 }
+    
+
 
 .navi-item {
     display: block;
