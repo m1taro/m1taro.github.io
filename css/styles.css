@@ -278,6 +278,8 @@ body {
     cursor: pointer;
 }
 
+
+
 .open {
     position: fixed;
     background: #151515;
@@ -286,13 +288,11 @@ body {
     width: 100%;
     text-align: center;
 }
-    
+
 .navi-list {
     list-style: none;
     margin-bottom: 20px;
 }
-    
-
 
 .navi-item {
     display: block;
