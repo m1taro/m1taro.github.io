@@ -1,0 +1,308 @@
+@charset "utf-8";
+
+html {
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #151515 url("../images/bg.png") no-repeat fixed left bottom;
+    background-size: cover;
+    font-family: "Acme", "Hiragino Kaku Gothic ProN", Meiryo, sans-selif;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.navi-bar {
+    text-align: right;
+}
+
+.navi-bar-item {
+    height: 50px;
+    margin-right: 40px;
+}
+
+.navi-list {
+    list-style: none;
+    display: inline-block;
+}
+
+.navi-item {
+    padding: 20px 10px;
+    line-height: 50px;
+    font-size: 2.0rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navi-bar-item a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.header {
+    padding: 170px 30px 80px;
+}
+
+.site-title-sub {
+    margin: 0 0 30px;
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+}
+
+.site-title-sub::before,
+.site-title-sub::after {
+    content: "";
+    display: inline-block;
+    width: 140px;
+    height: 2px;
+    margin: 0 30px;
+    background: #fff;
+    vertical-align: middle;
+}
+
+.site-title {
+    margin: 50px 0 40px;
+    font-size: 6.5rem;
+}
+
+.site-description {
+    margin-bottom: 50px;
+    color: #888;
+    font-size: 1.6rem;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    padding: 20px;
+    border-radius: 4px;
+    background: #afa58d;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.button-showy {
+    background: #f1b400;
+}
+
+.buttons .button {
+    margin: 10px;
+}
+
+.about {
+    padding: 80px 30px;
+    background: #fff;
+    color: #333;
+}
+
+.heading {
+    margin: 30px 0 45px;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.heading::before,
+.heading::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+
+.heading::before {
+    bottom: 5px;
+}
+
+.about-text {
+    margin: 0 auto 30px;
+    line-height: 1.8;
+    width: 60%;
+}
+
+.works {
+    padding: 80px 0;
+    background: #383634;
+}
+
+.skills {
+    padding: 80px 0;
+    background: #fff;
+    color: #333;
+}
+
+.skill-icon {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+    border: 4px solid;
+    border-radius: 50%;
+    color: #8500f1;
+    font-size: 8rem;
+}
+
+.skill-icon::before {
+    line-height: 142px;
+}
+
+.skill-title {
+    font-size: 2rem;
+    margin: 0 20px 20px;
+}
+
+.skill-text {
+    margin: 0 20px;
+    line-height: 2;
+}
+
+.contact {
+    padding: 80px 0 150px;
+}
+
+.contact-form {
+    width: 50%;
+    margin: 50px auto 0;
+}
+
+.contact-form input[type=text],
+.contact-form textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 130px;
+}
+
+.contact-form input[type=submit] {
+    display: block;
+    margin: 40px auto 0;
+    padding: 15px;
+    width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.contact-form input[type=submit]:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+
+.footer {
+    padding: 12px 0;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+.site-title-sub::before,
+.site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.site-title {
+    font-size: 5rem;
+    margin-top: 35px;
+}
+
+.header {
+    padding-top: 60px;
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+.heading {
+    font-size: 2.5rem;
+}
+
+.about-text {
+    line-height: 1.8;
+}
+
+.body {
+    font-size: 1.3rem;
+}
+
+.contact-form {
+    width: 80%;
+}
+
+.contact {
+    padding-bottom: 80px;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+}
+
+.navi-bar {
+    position: relative;
+    padding-top: 50px;
+}
+
+#hamburger {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    cursor: pointer;
+}
+
+
+
+.open {
+    position: fixed;
+    background: #151515;
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.navi-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.navi-item {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    display: none;
+}
+}
