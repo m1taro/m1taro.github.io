@@ -284,10 +284,15 @@ body {
 .open {
     position: fixed;
     background: #151515;
-    opacity: 0.7;
+    opacity: 0.9;
     height: 100%;
     width: 100%;
     text-align: center;
+}
+    
+.navi-list {
+    list-style: none;
+    margin-bottom: 20px;
 }
 
 .navi-item {
